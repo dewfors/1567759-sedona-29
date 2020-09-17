@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Седона - город в Аризоне</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-body">
 <header class="main-header">
@@ -10,26 +13,30 @@
     <a class="main-header-logo" href="index.html">
       <img src="https://via.placeholder.com/138x70" alt="Логотип город Седона">
     </a>
-    <ul class="site-navigation">
-      <li><a href="blank.html">Информация</a></li>
-      <li><a href="blank.html">Фото и видео</a></li>
-      <li><a href="blank.html">Карта штата</a></li>
-      <li><a href="hotels.html">Гостиницы</a></li>
-    </ul>
+    <div class="main-navigation-wrapper">
+      <div class="container">
+        <ul class="site-navigation">
+          <li><a href="blank.html">Информация</a></li>
+          <li><a href="blank.html">Фото и видео</a></li>
+          <li><a href="blank.html">Карта штата</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 </header>
 <main class="container">
   <section class="welcome">
-    <div>
+    <div class="welcome-image">
       <img src="https://via.placeholder.com/456x350" alt="Приглашение в город Седона">
     </div>
-    <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+    <h1>Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</h1>
     <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
   </section>
 
   <section class="features">
     <div>
-      <div class="features-item">
+      <div class="features-item features-item-fill">
         <h3>Настоящий городок</h3>
         <span>№1</span>
         <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
@@ -58,7 +65,7 @@
       <div class="features-image">
         <img src="https://via.placeholder.com/800x256" alt="Фото города Седона">
       </div>
-      <div class="features-item">
+      <div class="features-item features-item-fill">
         <h3>Там есть мост дьявола</h3>
         <span>№2</span>
         <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -66,17 +73,17 @@
     </div>
 
     <div>
-      <div class="features-item-clear">
+      <div class="features-item features-item-clear">
         <h3>Небольшая площадь</h3>
         <span>№3</span>
         <p>Все достопримечательности находятся очень близко</p>
       </div>
-      <div class="features-item-clear">
+      <div class="features-item features-item-clear">
         <h3>Красивая дорога</h3>
         <span>№4</span>
         <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
       </div>
-      <div class="features-item-clear">
+      <div class="features-item features-item-clear">
         <h3>Мало туристов</h3>
         <span>№5</span>
         <p>Большинство едет в Гранд Каньон и толпится там</p>
@@ -84,7 +91,7 @@
     </div>
   </section>
 
-  <section class="map appointment">
+  <section class="map">
     <h2>Карта местности</h2>
     <p>Заинтересовались?</p>
     <p class="appointment-info">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
@@ -99,7 +106,7 @@
   <section class="footer-contacts">
     <h2>Контакты</h2>
     <div class="footer-phone">
-      <p>#visitsedona<br><a class="contacts-phone" href="tel:+74956660166">тел: +7(495) 666-01-66</a></p>
+      <p class="footer-phone-text">#visitsedona<br><a class="contacts-phone" href="tel:+74956660166">тел: +7(495) 666-01-66</a></p>
     </div>
     <div class="footer-social">
       <ul>
