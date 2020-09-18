@@ -1,6 +1,7 @@
 /* Variables */
 :root {
   --basic-black: #000000;
+  --basic-black-opacity: rgba(0, 0, 0, 0.3);
   --basic-gray-dark: #333333;
   --basic-gray: #666666;
 
@@ -8,6 +9,7 @@
   --basic-white-opacity: rgba(255, 255, 255, 0.3);
 
   --special-blue: #81b3d2;
+  --special-blue-opacity: rgba(129, 179, 210, 0.3);
   --special-blue-hover: #669EC0;
   --special-blue-focus: #5496BD;
 
@@ -171,6 +173,86 @@ img {
 
 .button-search-hotel:focus {
   background-color: var(--special-brown-focus);
+  color: var(--basic-white-opacity);
+}
+
+/* search */
+.find-total-text {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.find-sort-text,
+.result-sort-list {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.result-sort-list {
+  list-style: none;
+  padding: 0;
+}
+
+.result-sort-item {
+  color: var(--basic-black-opacity);
+  cursor: pointer;
+}
+
+.result-sort-item-active {
+  color: var(--special-blue);
+}
+
+.result-sort-item:hover {
+  color: var(--special-blue);
+}
+
+.result-sort-item:active {
+  color: var(--basic-black);
+}
+
+.result-content-list {
+  list-style: none;
+  padding: 0;
+}
+
+.result-content-item h3 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.result-content-item p {
+  line-height: 21px;
+  color: var(--basic-gray-dark);
+}
+
+.result-content-item .rating {
+  line-height: 21px;
+  color: var(--basic-gray);
+}
+
+.button-result-reservation {
+  background-color: var(--special-brown);
+}
+
+.button-result-reservation:hover {
+  background-color: var(--special-brown-hover);
+}
+
+.button-result-reservation:focus {
+  background-color: var(--special-brown-focus);
+  color: var(--basic-white-opacity);
+}
+
+.button-result-details {
+  background-color: var(--special-blue);
+}
+
+.button-result-details:hover {
+  background-color: var(--special-blue-hover);
+}
+
+.button-result-details:focus {
+  background-color: var(--special-blue-focus);
   color: var(--basic-white-opacity);
 }
 
