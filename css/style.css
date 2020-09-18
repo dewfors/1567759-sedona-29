@@ -5,7 +5,7 @@
   --basic-gray: #666666;
 
   --basic-white: #ffffff;
-  --basic-white-opacity: rgba(255,255,255,.3);;
+  --basic-white-opacity: rgba(255, 255, 255, 0.3);
 
   --special-blue: #81b3d2;
   --special-blue-hover: #669EC0;
@@ -75,7 +75,7 @@ img {
 
 .site-navigation a:focus {
   color: var(--basic-black);
-  opacity: .3;
+  opacity: 0.3;
 }
 
 /* welcome */
@@ -83,7 +83,7 @@ img {
   text-align: center;
 }
 
-.welcome-image{
+.welcome-image {
   background-color: var(--special-blue);
 }
 
@@ -151,12 +151,12 @@ img {
   text-align: center;
 }
 
-.map p:not(.appointment-info) {
+.appointment-title {
   font-weight: 700;
   font-size: 30px;
 }
 
-.map .appointment-info {
+.appointment-info {
   color: var(--basic-gray-dark);
   line-height: 24px;
 }
@@ -164,14 +164,15 @@ img {
 .button-search-hotel {
   background-color: var(--special-brown);
 }
+
 .button-search-hotel:hover {
   background-color: var(--special-brown-hover);
 }
+
 .button-search-hotel:focus {
   background-color: var(--special-brown-focus);
   color: var(--basic-white-opacity);
 }
-
 
 /* main-footer */
 .main-footer {
@@ -212,9 +213,11 @@ img {
 .button-find-hotel {
   background-color: var(--special-blue);
 }
+
 .button-find-hotel:hover {
   background-color: var(--special-blue-hover);
 }
+
 .button-find-hotel:focus {
   background-color: var(--special-blue-focus);
   color: var(--basic-white-opacity);
