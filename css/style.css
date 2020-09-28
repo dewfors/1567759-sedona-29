@@ -41,6 +41,7 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 /* button */
@@ -118,6 +119,14 @@ img {
 
 .welcome-image {
   background-color: var(--basic-gray-light);
+  min-height: 510px;
+  position: relative;
+}
+.welcome-image img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .welcome h1 {
@@ -342,9 +351,12 @@ img {
 
 /* main-footer */
 .footer-contacts-list {
-  padding-left: 100px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 73px;
+  display: flex;
+}
+
+.footer-contacts-item {
+  width: calc(100% / 3);
 }
 
 .main-footer {
