@@ -222,9 +222,16 @@ img {
 }
 
 /* search */
+.search-result-sort{
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+}
+
 .find-total-text {
   font-size: 21px;
   font-weight: 700;
+  margin: 0 48px 0 0;
 }
 
 .find-sort-text,
@@ -233,14 +240,20 @@ img {
   line-height: 18px;
 }
 
+.find-sort-text{
+  margin-right: 40px;
+}
+
 .result-sort-list {
   list-style: none;
   padding: 0;
+  display: flex;
 }
 
 .result-sort-item {
   color: var(--basic-black-opacity);
   cursor: pointer;
+  margin-right: 33px;
 }
 
 .result-sort-item-active {
@@ -260,19 +273,45 @@ img {
   padding: 0;
 }
 
+.result-content-item{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 30px;
+}
+
 .result-content-item h3 {
   font-size: 21px;
   font-weight: 700;
+  margin: 0;
 }
 
 .result-content-item p {
   line-height: 21px;
   color: var(--basic-gray-dark);
+  margin: 0;
 }
 
 .result-content-item .rating {
   line-height: 21px;
   color: var(--basic-gray);
+}
+
+.result-item-img{
+  height: 90px;
+}
+
+.result-item-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.result-content-buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .button-result-reservation {
