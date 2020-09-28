@@ -231,7 +231,7 @@ img {
 .find-total-text {
   font-size: 21px;
   font-weight: 700;
-  margin: 0 48px 0 0;
+  margin-right: 48px;
 }
 
 .find-sort-text,
