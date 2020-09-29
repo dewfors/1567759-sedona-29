@@ -122,11 +122,12 @@ img {
   min-height: 510px;
   position: relative;
 }
-.welcome-image img{
+
+.welcome-image img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translate(-50%, -50%);
 }
 
 .welcome h1 {
