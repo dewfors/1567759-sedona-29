@@ -75,8 +75,16 @@ img {
 
 /* main-navigation */
 .main-navigation {
+  position: relative;
   font-weight: 700;
   color: var(--basic-black);
+}
+
+.main-header-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
 .main-navigation-wrapper {
@@ -100,6 +108,7 @@ img {
 }
 
 .site-navigation a {
+  line-height: 56px;
   color: var(--basic-black);
 }
 
