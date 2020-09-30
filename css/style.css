@@ -100,7 +100,10 @@ img {
 }
 
 .site-navigation .link {
-  text-align: center;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .site-navigation .link-gap {
@@ -108,7 +111,6 @@ img {
 }
 
 .site-navigation a {
-  line-height: 56px;
   color: var(--basic-black);
 }
 
