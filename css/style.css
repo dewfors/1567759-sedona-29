@@ -21,6 +21,16 @@
 
 /* Global */
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   min-width: 1200px;
   margin: 0;
@@ -42,6 +52,19 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* button */
@@ -130,6 +153,10 @@ img {
 
 .welcome-image {
   background-color: var(--basic-gray-light);
+  background-image: url("../img/mask-welcome.png"),
+  url("../img/background-welcome.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom, center top;
   min-height: 510px;
   position: relative;
 }
@@ -142,11 +169,14 @@ img {
 }
 
 .welcome h1 {
+  margin-top: 43px;
+  margin-bottom: 26px;
   font-size: 21px;
   font-weight: 700;
 }
 
 .welcome p {
+  margin-bottom: 51px;
   color: var(--basic-gray-dark);
 }
 
@@ -167,16 +197,28 @@ img {
 
 /* features-item */
 .features-item {
+  min-height: 256px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
 .features-item h3 {
+  margin: 47px 0 0;
+  width: 151px;
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
 }
 
+.features-item span {
+  margin-top: 25px;
+  line-height: 21px;
+}
+
 .features-item p {
+  margin-top: 23px;
   line-height: 21px;
 }
 
@@ -199,10 +241,53 @@ img {
 
 /* features-advice-item */
 .features-advice-item {
+  min-height: 331px;
+  padding-top: 160px;
+  position: relative;
   text-align: center;
 }
 
+.advice-item-housing::before {
+  content: '';
+  position: absolute;
+  width: 75px;
+  height: 72px;
+  left: 50%;
+  bottom: 198px;
+  transform: translate(-50%);
+  background-image: url("../img/housing.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.advice-item-food::before {
+  content: '';
+  position: absolute;
+  width: 75px;
+  height: 70px;
+  left: 50%;
+  bottom: 198px;
+  transform: translate(-50%);
+  background-image: url("../img/food.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.advice-item-souvenirs::before {
+  content: '';
+  position: absolute;
+  width: 64px;
+  height: 77px;
+  left: 50%;
+  bottom: 198px;
+  transform: translate(-50%);
+  background-image: url("../img/souvenirs.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .features-advice-item h3 {
+  margin: 0;
   color: var(--basic-black);
   font-size: 21px;
   font-weight: 700;
@@ -210,6 +295,7 @@ img {
 }
 
 .features-advice-item p {
+  margin-top: 25px;
   color: var(--basic-gray-dark);
   line-height: 21px;
 }
