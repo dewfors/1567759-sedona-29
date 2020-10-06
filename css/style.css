@@ -7,6 +7,7 @@
   --basic-gray-light: #cccccc;
 
   --basic-white: #ffffff;
+  --basic-white-light: #f2f2f2;
   --basic-white-opacity: rgba(255, 255, 255, 0.3);
 
   --special-blue: #81b3d2;
@@ -182,7 +183,6 @@ img {
 }
 
 /* features */
-
 .features-row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -206,7 +206,7 @@ img {
 }
 
 .features-item h3 {
-  margin: 47px 0 0;
+  margin-top: 47px;
   width: 151px;
   font-size: 21px;
   line-height: 21px;
@@ -248,7 +248,7 @@ img {
   text-align: center;
 }
 
-.advice-item-housing::before {
+.features-advice-item::before {
   content: '';
   position: absolute;
   width: 75px;
@@ -256,35 +256,23 @@ img {
   left: 50%;
   bottom: 198px;
   transform: translate(-50%);
-  background-image: url("../img/housing.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.advice-item-housing::before {
+  background-image: url("../img/housing.svg");
 }
 
 .advice-item-food::before {
-  content: '';
-  position: absolute;
-  width: 75px;
   height: 70px;
-  left: 50%;
-  bottom: 198px;
-  transform: translate(-50%);
   background-image: url("../img/food.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
 .advice-item-souvenirs::before {
-  content: '';
-  position: absolute;
   width: 64px;
   height: 77px;
-  left: 50%;
-  bottom: 198px;
-  transform: translate(-50%);
   background-image: url("../img/souvenirs.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
 .features-advice-item h3 {
@@ -332,6 +320,135 @@ img {
 
 .button-search-hotel:focus {
   background-color: var(--special-brown-focus);
+  color: var(--basic-white-opacity);
+}
+
+.form-content {
+  position: relative;
+}
+
+.form {
+  width: 568px;
+  min-height: 395px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: var(--basic-white);
+}
+
+.form-inner {
+  min-height: inherit;
+  padding: 61px 55px 55px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.form-row-btn {
+  margin-bottom: 0;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
+
+.form-box {
+  width: 346px;
+  height: 38px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--basic-white-light);
+}
+
+.form-box-sm {
+  width: 114px;
+  height: 38px;
+  display: flex;
+  background-color: var(--basic-white-light);
+}
+
+.form-label {
+  font-weight: 700;
+}
+
+.form-label-adults {
+  margin-right: 40px;
+}
+
+.form-label-childs {
+  margin-right: 40px;
+}
+
+.form-input {
+  flex-grow: 1;
+  padding: 6px 12px;
+}
+
+.form-input-number {
+  width: 38px;
+  padding-left: 14px;
+}
+
+.form-input-number,
+.form-input {
+  background-color: inherit;
+  border: none;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.form-input::placeholder,
+.form-input-number::placeholder {
+  color: var(--basic-black);
+}
+
+.button-control {
+  width: 38px;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button-control:hover rect,
+.button-control:hover path {
+  fill: var(--basic-black);
+}
+
+.button-control:focus rect,
+.button-control:focus path {
+  fill: var(--special-blue);
+}
+
+.form-submit {
+  width: 100%;
+  height: 58px;
+  margin-top: 24px;
+  border: none;
+  background-color: var(--special-blue);
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+}
+
+.form-submit:hover {
+  background-color: var(--special-blue-hover);
+}
+
+.form-submit:focus {
+  background-color: var(--special-blue-focus);
   color: var(--basic-white-opacity);
 }
 
@@ -500,7 +617,7 @@ img {
 
 .footer-social li {
   margin-bottom: 5px;
-  height: min-content;
+  min-height: 48px;
 }
 
 .footer-social .social-button {
@@ -546,7 +663,7 @@ img {
 
 .copyright-link {
   display: block;
-  height: 41px;
+  min-height: 41px;
   margin-left: 8px;
 }
 
