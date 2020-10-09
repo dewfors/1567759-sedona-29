@@ -453,6 +453,212 @@ img {
 }
 
 /* search */
+
+.search-filter {
+  min-height: 217px;
+  padding: 26px 73px 31px;
+  background-image: url("../img/background-search.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: var(--special-blue);
+}
+
+.form-settings {
+  display: flex;
+  /*justify-content: space-between;*/
+}
+
+.search-filter fieldset {
+  padding: 0;
+  border: none;
+}
+
+.search-filter legend,
+.search-filter label {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-white);
+}
+
+.search-filter label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -39px;
+  top: 0;
+  width: 27px;
+  height: 23px;
+  /*border: 2px solid #000000;*/
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label::before {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.filter-input-checkbox:disabled:not(:checked) + label::before {
+  background-image: url("../img/checkbox-off-disabled.svg");
+}
+
+.filter-input-checkbox:disabled:checked + label::before {
+  background-image: url("../img/checkbox-on-disabled.svg");
+}
+
+.search-filter ul {
+  padding: 0;
+  margin: 20px 0 0;
+  list-style: none;
+}
+
+.filter-option {
+  margin-bottom: 20px;
+  padding-left: 39px;
+}
+
+.filter-option:last-child {
+  margin-bottom: 0;
+}
+
+.type-housing {
+  margin-left: 120px;
+}
+
+.filter-range {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.filter-range fieldset {
+  width: 317px;
+}
+
+.range-wrapper {
+  margin: 10px 0 15px;
+}
+
+.price-controls {
+  height: 36px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+  position: relative;
+}
+
+.price-controls:before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 22px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--basic-white);
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 50%;
+  display: flex;
+  padding-left: 50px;
+}
+
+.price-controls label {
+  line-height: 21px;
+}
+
+.price-controls input {
+  width: 60%;
+  padding-left: 10px;
+  /*padding: 10px;*/
+  /*margin-left: 10px;*/
+  /*text-align: center;*/
+  color: var(--basic-white);
+  border: none;
+  /*border-radius: 5px;*/
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.range-controls {
+  position: relative;
+  height: 20px;
+  padding-top: 9px;
+
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: var(--basic-white-opacity);
+}
+
+.range-controls .bar {
+  width: 248px;
+  height: 2px;
+  background: var(--basic-white);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 19px;
+  height: 19px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: var(--basic-gray);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--basic-gray);
+  cursor: pointer;
+}
+
+.range-controls .toggle:hover {
+  transform: scale(1.1);
+}
+
+.range-controls .toggle-min {
+  left: 0;
+}
+
+.range-controls .toggle-max {
+  left: 248px;
+}
+
+.filter-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.filter-button {
+  padding: 10px 35px;
+  background-color: transparent;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/*search-result*/
+.search-result {
+  padding: 0 73px;
+}
+
 .search-result-sort {
   display: flex;
   align-items: center;
@@ -638,7 +844,7 @@ img {
   background-color: var(--special-blue-focus);
 }
 
-.social-button:focus path {
+.social-button:focus svg {
   fill: var(--special-blue-opacity);
 }
 
