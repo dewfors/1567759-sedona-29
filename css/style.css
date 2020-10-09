@@ -5,6 +5,7 @@
   --basic-gray-dark: #333333;
   --basic-gray: #666666;
   --basic-gray-light: #cccccc;
+  --basic-gray-lighter: #cacaca;
 
   --basic-white: #ffffff;
   --basic-white-light: #f2f2f2;
@@ -21,7 +22,6 @@
 }
 
 /* Global */
-
 html {
   box-sizing: border-box;
 }
@@ -453,7 +453,6 @@ img {
 }
 
 /* search */
-
 .search-filter {
   min-height: 217px;
   padding: 26px 73px 31px;
@@ -465,7 +464,6 @@ img {
 
 .form-settings {
   display: flex;
-  /*justify-content: space-between;*/
 }
 
 .search-filter fieldset {
@@ -497,7 +495,6 @@ img {
   top: 0;
   width: 27px;
   height: 23px;
-  /*border: 2px solid #000000;*/
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -585,12 +582,8 @@ img {
 .price-controls input {
   width: 60%;
   padding-left: 10px;
-  /*padding: 10px;*/
-  /*margin-left: 10px;*/
-  /*text-align: center;*/
   color: var(--basic-white);
   border: none;
-  /*border-radius: 5px;*/
   background-color: transparent;
   font-family: inherit;
   font-size: inherit;
@@ -600,7 +593,6 @@ img {
   position: relative;
   height: 20px;
   padding-top: 9px;
-
 }
 
 .range-controls .scale {
@@ -705,6 +697,33 @@ img {
   color: var(--basic-black);
 }
 
+.sort-arrows {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sort-arrow path {
+  fill: var(--basic-gray-lighter);
+}
+
+.sort-arrow:hover path {
+  fill: var(--basic-black);
+}
+
+.sort-arrow:focus path {
+  fill: var(--special-blue);
+}
+
+.sort-arrow-down {
+  margin-left: 12px;
+}
+
+.sort-arrow-active path {
+  fill: var(--special-blue);
+}
+
+/*result-content-list*/
 .result-content-list {
   list-style: none;
   padding: 0;
@@ -718,10 +737,25 @@ img {
   gap: 30px;
 }
 
+.result-item-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .result-content-item h3 {
   font-size: 21px;
   font-weight: 700;
   margin: 0;
+  cursor: pointer;
+}
+
+.result-content-item h3:hover {
+  color: var(--special-blue);
+}
+
+.result-content-item h3:active {
+  color: var(--basic-black-opacity);
 }
 
 .result-content-item p {
@@ -745,6 +779,24 @@ img {
   justify-content: space-between;
 }
 
+.stars {
+  background-image: url(../img/star.svg);
+  background-repeat: space;
+  height: 17px;
+}
+
+.stars-2 {
+  width: 40px;
+}
+
+.stars-3 {
+  width: 65px;
+}
+
+.stars-4 {
+  width: 89px;
+}
+
 .result-content-buttons {
   display: flex;
   justify-content: space-between;
@@ -752,6 +804,8 @@ img {
 }
 
 .button-result-reservation {
+  margin-left: 5px;
+  padding: 3px 17px;
   background-color: var(--special-brown);
 }
 
@@ -765,6 +819,7 @@ img {
 }
 
 .button-result-details {
+  padding: 3px 17px;
   background-color: var(--special-blue);
 }
 
