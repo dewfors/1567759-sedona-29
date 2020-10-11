@@ -558,7 +558,6 @@ img {
 
 .price-controls:before {
   content: "";
-  display: block;
   width: 2px;
   height: 22px;
   position: absolute;
@@ -779,22 +778,12 @@ img {
   justify-content: space-between;
 }
 
-.stars {
+.star {
+  display: inline-block;
   background-image: url(../img/star.svg);
-  background-repeat: space;
+  background-repeat: no-repeat;
+  width: 17px;
   height: 17px;
-}
-
-.stars-2 {
-  width: 40px;
-}
-
-.stars-3 {
-  width: 65px;
-}
-
-.stars-4 {
-  width: 89px;
 }
 
 .result-content-buttons {
