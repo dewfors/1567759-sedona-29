@@ -159,7 +159,7 @@ img {
   url("../img/background-welcome.jpg");
   background-repeat: no-repeat;
   background-position: center bottom, center top;
-  min-height: 510px;
+  min-height: 509px;
   position: relative;
 }
 
@@ -172,7 +172,7 @@ img {
 
 .welcome h1 {
   margin-top: 43px;
-  margin-bottom: 26px;
+  margin-bottom: 42px;
   font-size: 21px;
   font-weight: 700;
 }
@@ -207,6 +207,7 @@ img {
 
 .features-item h3 {
   margin-top: 47px;
+  margin-bottom: 27px;
   width: 151px;
   font-size: 21px;
   line-height: 21px;
@@ -214,7 +215,6 @@ img {
 }
 
 .features-item span {
-  margin-top: 25px;
   line-height: 21px;
 }
 
@@ -291,19 +291,19 @@ img {
 
 /* map */
 .map {
-  padding-top: 60px;
+  padding-top: 55px;
   text-align: center;
 }
 
 .appointment-title {
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 31px;
   font-weight: 700;
   font-size: 30px;
 }
 
 .appointment-info {
-  margin-bottom: 48px;
+  margin-bottom: 45px;
   color: var(--basic-gray-dark);
   line-height: 24px;
 }
@@ -338,7 +338,7 @@ img {
 
 .form-inner {
   min-height: inherit;
-  padding: 61px 55px 55px;
+  padding: 54px 56px 55px;
 }
 
 .form-row {
@@ -382,7 +382,7 @@ img {
 }
 
 .form-label-childs {
-  margin-right: 40px;
+  margin-right: 27px;
 }
 
 .form-input {
@@ -392,7 +392,7 @@ img {
 
 .form-input-number {
   width: 38px;
-  padding-left: 14px;
+  padding-left: 15px;
 }
 
 .form-input-number,
@@ -823,7 +823,7 @@ img {
 
 /* main-footer */
 .footer-contacts-list {
-  padding: 0 73px;
+  padding: 0 55px;
   display: flex;
 }
 
@@ -837,6 +837,7 @@ img {
 }
 
 .footer-phone-text {
+  margin-top: 23px;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -849,7 +850,7 @@ img {
 }
 
 .footer-social {
-  padding-top: 37px;
+  padding-top: 36px;
   padding-bottom: 37px;
   display: flex;
   justify-content: center;
@@ -906,6 +907,7 @@ img {
 }
 
 .footer-copyright-text {
+  margin-top: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -943,6 +945,3 @@ img {
   color: var(--basic-white-opacity);
 }
 
-.modal-find {
-  display: none;
-}
