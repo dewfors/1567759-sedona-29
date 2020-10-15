@@ -596,15 +596,12 @@ img {
 
 .price-controls input {
   width: 60%;
+  padding-left: 5px;
   color: var(--basic-white);
   border: none;
   background-color: transparent;
   font-family: inherit;
   font-size: inherit;
-}
-
-.price-controls input[name="min-price"] {
-  padding-left: 5px;
 }
 
 .price-controls input[name="max-price"] {
@@ -623,7 +620,7 @@ img {
 }
 
 .range-controls .bar {
-  width: 248px;
+  width: 255px;
   height: 2px;
   background: var(--basic-white);
 }
@@ -651,7 +648,7 @@ img {
 }
 
 .range-controls .toggle-max {
-  left: 248px;
+  left: 253px;
 }
 
 .filter-btn {
