@@ -341,11 +341,6 @@ img {
 }
 
 .form {
-  /*width: 568px;*/
-  /*min-height: 395px;*/
-  /*position: absolute;*/
-  /*left: 50%;*/
-  /*transform: translate(-50%);*/
   background-color: var(--basic-white);
 }
 
