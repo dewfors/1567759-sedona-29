@@ -6,12 +6,12 @@ const adults = document.querySelector('#adults')
 const children = document.querySelector('#children')
 
 let isStorageSupport = true;
-let storageAdults = "";
-let storageChildren = "";
+let storageAdults = '';
+let storageChildren = '';
 
 try {
-  storageAdults = localStorage.getItem("adults");
-  storageChildren = localStorage.getItem("children");
+  storageAdults = localStorage.getItem('adults');
+  storageChildren = localStorage.getItem('children');
 } catch (err) {
   isStorageSupport = false;
 }
@@ -30,10 +30,10 @@ buttonSearchHotel.addEventListener('click', function (evt) {
   }
 })
 
-formModal.addEventListener("submit", function (evt) {
+formModal.addEventListener('submit', function (evt) {
   if (!dateArrival.value || !dateDeparture.value || !adults.value || !children.value) {
     evt.preventDefault();
-    console.log("Нужно заполнить все поля формы");
+    console.log('Нужно заполнить все поля формы');
     if (!dateArrival.value) {
       dateArrival.classList.add('form-input-empty')
     } else {
@@ -60,17 +60,17 @@ formModal.addEventListener("submit", function (evt) {
 
   } else {
     if (isStorageSupport) {
-      localStorage.setItem("adults", adults.value);
-      localStorage.setItem("children", children.value);
+      localStorage.setItem('adults', adults.value);
+      localStorage.setItem('children', children.value);
     }
   }
 })
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
-    if (formModal.classList.contains("fadeInDown")) {
+    if (formModal.classList.contains('fadeInDown')) {
       evt.preventDefault();
-      formModal.classList.remove("fadeInDown");
+      formModal.classList.remove('fadeInDown');
     }
   }
 })
