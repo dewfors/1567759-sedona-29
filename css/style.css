@@ -313,8 +313,8 @@ img {
   text-align: center;
 }
 
-.map-view {
-  max-height: 473px;
+.map-view iframe{
+  display: block;
 }
 
 .appointment-title {
