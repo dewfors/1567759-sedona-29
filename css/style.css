@@ -40,7 +40,7 @@ body {
   min-width: 1200px;
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
@@ -311,6 +311,10 @@ img {
 .map {
   padding-top: 55px;
   text-align: center;
+}
+
+.map-view {
+  max-height: 473px;
 }
 
 .appointment-title {
@@ -617,6 +621,10 @@ img {
 
 .price-controls input[name="max-price"] {
   padding-left: 4px;
+}
+
+.price-controls input::placeholder {
+  color: var(--basic-white);
 }
 
 .range-controls {
