@@ -313,7 +313,7 @@ img {
   text-align: center;
 }
 
-.map-view iframe{
+.map-view iframe {
   display: block;
 }
 
@@ -1057,4 +1057,10 @@ img {
 .button-find-hotel:focus {
   background-color: var(--special-blue-focus);
   color: var(--basic-white-opacity);
+}
+
+.section-empty {
+  min-height: 500px;
+  padding-top: 200px;
+  text-align: center;
 }
