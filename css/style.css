@@ -7,6 +7,7 @@
   --basic-gray-opacity: rgba(136, 136, 136, 0.1);
   --basic-gray-light: #cccccc;
   --basic-gray-lighter: #cacaca;
+  --basic-gray-pale: #eeeeee;
 
   --basic-white: #ffffff;
   --basic-white-light: #f2f2f2;
@@ -40,7 +41,7 @@ body {
   min-width: 1200px;
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
@@ -90,9 +91,6 @@ img {
 
 .page-body {
   min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
   background-color: var(--basic-gray-opacity);
 }
 
@@ -100,6 +98,9 @@ img {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   background-color: var(--basic-white);
 }
@@ -247,7 +248,7 @@ img {
 }
 
 .features-item-clear {
-  background-color: var(--basic-white);
+  background-color: var(--basic-gray-pale);
 }
 
 .features-item-clear h3 {
@@ -267,7 +268,7 @@ img {
 }
 
 .features-advice-item::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 75px;
   height: 72px;
@@ -1023,11 +1024,25 @@ img {
 
 .form-input-empty {
   border: 2px solid var(--special-error);
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: scale;
 }
 
 .animate {
   animation-duration: 1s;
   animation-fill-mode: both;
+}
+
+@keyframes scale {
+  0% {
+    /*opacity: 0;*/
+    transform: scale(1.5);
+  }
+  100% {
+    /*opacity: 1;*/
+    transform: scale(1.0);
+  }
 }
 
 @keyframes fadeInDown {
