@@ -90,12 +90,13 @@ img {
 }
 
 .page-body {
-  min-height: 100%;
+  height: 100%;
   background-color: var(--basic-gray-opacity);
 }
 
 .main-wrapper {
   width: 1200px;
+  min-height: 100%;
   margin: 0 auto;
   padding: 0;
   display: grid;
@@ -1073,7 +1074,6 @@ img {
 }
 
 .section-empty {
-  min-height: 500px;
   padding-top: 200px;
   text-align: center;
 }
